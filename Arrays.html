@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //creacion de array
+        const array = [];
+        const arrayB = [1,true,"hello world",["A","B","C"]];
+        
+        //acceder a los valores del array
+        console.log(arrayB)
+        console.log("mostrar el valor que tiene el arraye en la posicion 2 : ",arrayB[2])
+        console.log("mostrar el ultimo valor del objeto : ", arrayB[3][2])
+
+        //Formas alternativas de crear arrays
+        const c = Array.of("x","y","z",9,8,7);
+        const arrayD= Array(100).fill(false);
+
+        //Agregar valores al array
+        console.log("array de colores")
+        const colores = ["ROJO","VERDE","AZUL"]
+        console.log(colores)
+        colores.push("NEGRO")
+        colores.unshift("BLANCO")
+        console.log("se agregon nuevos colores con push() al final y unshift() al inicio del array ", colores)
+
+        //Quitar valor que tiene en la ultima posicion
+        colores.pop();
+        colores.shift();
+        console.log("se quita del array el valor NEGRO con pop()", colores)
+        console.log("se quita del array el valor BLANCO con shift()", colores)
+
+    </script>
+</body>
+</html>
